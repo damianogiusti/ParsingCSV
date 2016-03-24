@@ -76,8 +76,9 @@ public class MainActivity extends AppCompatActivity {
             while ((line = csvReader.readNext()) != null) {
                 printLine(line);
             }
-        } catch (Exception e) {
 
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
