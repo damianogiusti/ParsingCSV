@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             InputStream inputStream = getResources().openRawResource(R.raw.dati);
-            CSVReader csvReader = new CSVReader(new InputStreamReader(inputStream));
+            CSVReader csvReader = new CSVReader(new InputStreamReader(inputStream), ';');
 
             String[] line;
             while ((line = csvReader.readNext()) != null) {
